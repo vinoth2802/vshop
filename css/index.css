@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Style+Script&display=swap');
+@font-face {
+    font-family: "Brolian";
+    src: url("../fonts/Brolian.ttf") format("truetype");
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+  }
+
+header{
+    position: relative;
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1vh;
+    left :1rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+#logo-img{
+    height: 5vh;
+    margin-right: 0.5rem;
+}
+.logo h1 {
+    font-family: "Brolian", sans-serif;
+    letter-spacing: 1px;
+    padding-top: 0.8rem;
+    font-weight: 600;
+}
+.searchbar{
+    position: relative;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2rem;
+}
+.searchbar input[type="search"] {
+    height: 2.5rem;
+    width: 100%;
+    padding-left: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    outline: none;
+    border: 1px solid grey;
+    border-right: none;
+    font-size: 1.2rem;
+}
+.searchbar input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background: url('./images/close.png') no-repeat center;
+    background-size: contain; 
+    cursor: pointer; 
+  }
+  
+.searchbar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 4rem ;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    outline: none;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.searchbar img{
+    height: 1.5rem;
+}
+.navbar {
+    position: relative;
+    width: 42%;
+    padding: 0;
+    margin: 0;
+}
+.navbar ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar img {
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+.navbar a {
+    height: 3rem;
+    width: 10rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 0.8rem;
+    transition: all 0.3s;
+   border: 2px solid transparent; 
+}
+.navbar ul li a.active {
+  border: 2px solid #FF8F00; 
+  background-color:rgba(255, 145, 0, 0.3);
+}
+.navbar a:hover{
+    background-color:rgba(255, 145, 0, 0.3);
+}
+
+#content{
+  flex-grow: 1;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
